@@ -1,0 +1,59 @@
+groups: {}
+disabled_commands:
+- commands
+player_limit: 222
+stats: b8085406-93c1-42ed-9d09-8305741d2ec3
+permissions:
+  default:
+  - untamedchat.msg
+  - untamedchat.reply
+  - untamedchat.globalchat
+  Admin:
+  - bat.ban.exempt
+  - bat.mute.exempt
+  - bat.kick.exempt
+  - bat.warn.exempt
+  - bat.admin
+  - bungeecord.command.find
+  - bungeecord.command.list
+  - bungeecord.command.server
+  - bungeecord.command.alert
+  - bungeetablistplus.hide
+  - bungeetablistplus.seevanished
+  - bungeefilter.bypass
+  SystemAdmin:
+  - bungeecord.command.send
+  - bungeecord.command.ip
+  - bungeetablistplus.admin
+  - hubmagic.admin
+  - redisbungee.command.lastseen
+  - redisbungee.command.ip
+  - redisbungee.command.sendtoall
+  - redisbungee.command.serverid
+  - redisbungee.command.serverids
+  - redisbungee.command.pproxy
+  - psfalias.ignore
+  - psfalias.reload
+listeners:
+- max_players: 500
+  priorities:
+  - defaultFallback
+  host: 0.0.0.0:25565
+  bind_local_address: true
+  ping_passthrough: false
+  tab_list: GLOBAL_PING
+  tab_size: 80
+  force_default_server: false
+  motd: "&7       < < < < <     &2&lPietCraft&7.de     &r&7> > > > >"
+  query_enabled: true
+  query_port: 25565
+  forced_hosts: {}
+timeout: 30000
+connection_throttle: 0
+servers:
+  defaultFallback:
+    address: 172.16.8.87:25565
+    restricted: false
+    motd: 'null'
+ip_forward: true
+online_mode: true
